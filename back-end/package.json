@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/zennon-sml/todo-vercel#readme",
   "dependencies": {
+    "@vercel/postgres": "^0.10.0",
     "dotenv": "^17.0.1",
     "express": "^5.1.0"
   }

@@ -1,11 +1,8 @@
 const express = require("express")
 const router = express.Router()
-const model = require("../models/todo")
+const controller = require("../controllers/todo")
 
-router.get("/", async (req, res) => {
-    const todos = await model.getAllTodos()
-    res.json(todos)
-    console.log(todos)
-})
+router.get("/", controller.getAllTodos)
+router.post("/", controller.createTodo)
 
 module.exports = router
