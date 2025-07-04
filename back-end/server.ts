@@ -4,7 +4,7 @@ const app = express()
 app.use(express.json());
 const port = 4000
 
-todoRoutes = require("./routes/todo")
+const todoRoutes = require("./routes/todo")
 app.use("/todo", todoRoutes)
 
 app.listen(port, () => {

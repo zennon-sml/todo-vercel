@@ -1,5 +1,11 @@
 const { db } = require('@vercel/postgres')
 
+type Todo = {
+    id: number
+    descripption: string
+    done: boolean
+    created_at: Date
+}
 
 async function getAllTodos() {
     try {
